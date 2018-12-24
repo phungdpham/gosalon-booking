@@ -1,0 +1,20 @@
+.wrapper .main-panel {  float: left;
+}
+.wrapper .sidebar {
+  right: 0;
+  left: auto;
+}
+@media screen and (min-width: 992px){
+  .wrapper .sidebar .sidebar-wrapper li.active>a:not([data-toggle=collapse]):before {
+    border-left: 17px solid #ddd;
+    left: -16px;
+    border-right: none;
+    right: auto;
+  }
+  .sidebar .sidebar-wrapper li.active>a:not([data-toggle=collapse]):after{
+    border-left: 17px solid #f4f3ef;
+    left: -17px;
+    border-right: none;
+    right: auto;
+  }
+}

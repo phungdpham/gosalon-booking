@@ -63,7 +63,7 @@ var d = today.getDate();
 const events = [
   {
     title: "All Day Event",
-    allDay: true,
+    allDay: false,
     start: new Date(y, m, 1),
     end: new Date(y, m, 1)
   },
@@ -85,7 +85,7 @@ const events = [
     title: "PD-PRO-REACT Launch",
     start: new Date(y, m, d - 2),
     end: new Date(y, m, d - 2),
-    allDay: true,
+    allDay: false,
     color: "azure"
   },
   {

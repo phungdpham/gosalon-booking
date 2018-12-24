@@ -5,7 +5,6 @@ import { Nav, Collapse } from "reactstrap";
 import PerfectScrollbar from "perfect-scrollbar";
 
 import avatar from '../../assets/img/faces/ayo-ogunseinde-2.jpg';
-import logo from '../../assets/img/react-logo.png';
 
 var ps;
 
