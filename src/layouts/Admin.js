@@ -35,13 +35,13 @@ class Admin extends React.Component {
   //     document.documentElement.classList.remove("perfect-scrollbar-on");
   //   }
   // }
-  componentDidUpdate(e) {
-    if (e.history.action === "PUSH") {
-      document.documentElement.scrollTop = 0;
-      document.scrollingElement.scrollTop = 0;
-      this.refs.mainPanel.scrollTop = 0;
-    }
-  }
+  // componentDidUpdate(e) {
+  //   if (e.history.action === "PUSH") {
+  //     document.documentElement.scrollTop = 0;
+  //     document.scrollingElement.scrollTop = 0;
+  //     this.refs.mainPanel.scrollTop = 0;
+  //   }
+  // }
   getRoutes = routes => {
     return routes.map((prop, key) => {
       if (prop.collapse) {

@@ -77,6 +77,7 @@ class Calendar extends React.Component {
               <Card className="card-calendar">
                 <CardBody>
                   <BigCalendar
+                    style={{height: '800px'}}
                     selectable
                     localizer={localizer}
                     events={this.state.events}

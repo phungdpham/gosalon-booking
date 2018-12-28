@@ -2,6 +2,7 @@
 // import Appointment from './views/Appointment';
 import BookAppointment from './views/Appointment';
 import Service from './views/Services';
+import Employee from './views/Employees';
 
 
 
@@ -18,6 +19,13 @@ const routes = [
     name: 'Service',
     icon: 'nc-icon nc-bullet-list-67',
     component: Service,
+    layout: '/admin'
+  },
+  {
+    path: '/employees',
+    name: 'Employee',
+    icon: 'nc-icon nc-single-02',
+    component: Employee,
     layout: '/admin'
   }
 ];

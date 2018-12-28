@@ -11,13 +11,13 @@ class serGroup extends React.Component {
   render() {
     return(
       <>
-        <Card className='ml-5 mr-5'>
+        <Card>
           <CardHeader>
             <CardTitle tag='h4'>Add New Service Group</CardTitle>
           </CardHeader>
           <CardBody>
             <Form action='#' method='#'>
-              <label>Group</label>
+              {/* <label>Group</label> */}
               <FormGroup>
                 <Input id='service-group-name' placeholder='Enter Group Name' type='text' />
               </FormGroup>

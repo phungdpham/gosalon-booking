@@ -5,7 +5,7 @@ class servicesByGroup extends React.Component {
   render() {
     return (
       <div>
-        <Card className='ml-5 mr-5'>
+        <Card>
           <CardHeader>
             <h3><strong>Manicure</strong></h3>
           </CardHeader>
@@ -46,7 +46,7 @@ class servicesByGroup extends React.Component {
           </CardBody>
         </Card>
 
-        <Card className='ml-5 mr-5'>
+        <Card>
           <CardHeader>
             <h3><strong>Pedicure</strong></h3>
           </CardHeader>

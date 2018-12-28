@@ -17,12 +17,11 @@ class Services extends React.Component {
   render() {
     return (
       <>
-        <Container>
-
+        <div>
           <Row>
             <Col md='12'>
-              <Button outline color='primary' href='#collapseService' id='show-new-service' className='pull-right mr-5'>New Service</Button>
-              <Button outline color='primary' href='#collapseGroup' id='show-new-group' className='pull-right'>New Group</Button>
+              <Button color='success' href='#collapseService' id='show-new-service' className=' btn-round pull-right mr-5'>New Service</Button>
+              <Button outline color='success' href='#collapseGroup' id='show-new-group' className='btn-round pull-right'>New Group</Button>
             </Col>
           </Row>
 
@@ -45,7 +44,7 @@ class Services extends React.Component {
               <AllServices />
             </Col>
           </Row>
-        </Container>
+        </div>
       </>
     )
   }
