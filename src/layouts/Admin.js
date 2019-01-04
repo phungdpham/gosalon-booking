@@ -18,7 +18,7 @@ class Admin extends React.Component {
     this.state = {
       backgroundColor: "black",
       activeColor: "info",
-      sidebarMini: false
+      sidebarMini: true
     };
   }
   // componentDidMount() {

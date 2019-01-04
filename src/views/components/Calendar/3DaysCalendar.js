@@ -19,45 +19,13 @@ class Calendar extends React.Component {
     super(props);
     this.state = {
       events: events,
-      alert: null
     };
   }
   selectedEvent = event => {
     alert(event.title);
   };
-  addNewEventAlert = slotInfo => {
-    this.setState({
-      alert: (
-        <SweetAlert
-          input
-          showCancel
-          style={{ display: "block", marginTop: "-100px" }}
-          title="Input something"
-          onConfirm={e => this.addNewEvent(e, slotInfo)}
-          onCancel={() => this.hideAlert()}
-          confirmBtnBsStyle="info"
-          cancelBtnBsStyle="danger"
-        />
-      )
-    });
-  };
-  addNewEvent = (e, slotInfo) => {
-    var newEvents = this.state.events;
-    newEvents.push({
-      title: e,
-      start: slotInfo.start,
-      end: slotInfo.end
-    });
-    this.setState({
-      alert: null,
-      events: newEvents
-    });
-  };
-  hideAlert = () => {
-    this.setState({
-      alert: null
-    });
-  };
+
+
   eventColors = (event, start, end, isSelected) => {
     var backgroundColor = "event-";
     event.color

@@ -79,7 +79,7 @@ class AdminNavbar extends React.Component {
         >
           <Container fluid>
             <div className="navbar-wrapper">
-              <div className="navbar-minimize">
+              {/* <div className="navbar-minimize">
                 <Button
                   className="btn-icon btn-round"
                   color="default"
@@ -89,43 +89,45 @@ class AdminNavbar extends React.Component {
                   <i className="nc-icon nc-minimal-right text-center visible-on-sidebar-mini" />
                   <i className="nc-icon nc-minimal-left text-center visible-on-sidebar-regular" />
                 </Button>
-              </div>
-              <div
-                className={classnames("navbar-toggle", {
-                  toggled: this.state.sidebarOpen
-                })}
+              </div> */}
+              <button
+                aria-controls="navigation-index"
+                aria-expanded={this.state.collapseOpen}
+                aria-label="Toggle navigation"
+                className="navbar-toggler"
+                // data-target="#navigation"
+                data-toggle="collapse"
+                type="button"
+                onClick={this.toggleCollapse}
               >
-                <button
-                  className="navbar-toggler"
-                  type="button"
-                  onClick={this.toggleSidebar}
-                >
-                  <span className="navbar-toggler-bar bar1" />
-                  <span className="navbar-toggler-bar bar2" />
-                  <span className="navbar-toggler-bar bar3" />
-                </button>
-              </div>
-              <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
+                <span className="navbar-toggler-bar navbar-kebab" />
+                <span className="navbar-toggler-bar navbar-kebab" />
+                <span className="navbar-toggler-bar navbar-kebab" />
+              </button>
+
+              {/* <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
                 <span className="d-none d-md-block">
                   Paper Dashboard PRO React
                 </span>
                 <span className="d-block d-md-none">PD PRO React</span>
-              </NavbarBrand>
+              </NavbarBrand> */}
             </div>
-            <button
-              aria-controls="navigation-index"
-              aria-expanded={this.state.collapseOpen}
-              aria-label="Toggle navigation"
-              className="navbar-toggler"
-              // data-target="#navigation"
-              data-toggle="collapse"
-              type="button"
-              onClick={this.toggleCollapse}
+
+            <div
+              className={classnames("navbar-toggle", {
+                toggled: this.state.sidebarOpen
+              })}
             >
-              <span className="navbar-toggler-bar navbar-kebab" />
-              <span className="navbar-toggler-bar navbar-kebab" />
-              <span className="navbar-toggler-bar navbar-kebab" />
-            </button>
+              <button
+                className="navbar-toggler"
+                type="button"
+                onClick={this.toggleSidebar}
+              >
+                <span className="navbar-toggler-bar bar1" />
+                <span className="navbar-toggler-bar bar2" />
+                <span className="navbar-toggler-bar bar3" />
+              </button>
+            </div>
             <Collapse
               className="justify-content-end"
               navbar

@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDateTime from 'react-datetime';
+import ReactDatetime from 'react-datetime';
 
 // reactstrap components
 import {
@@ -34,7 +34,7 @@ class ReqTime extends React.Component {
             <Card>
               <CardBody>
                 <FormGroup>
-                  <ReactDateTime
+                  <ReactDatetime
                     inputProps={{
                       className: 'form-control',
                       placeholder: "Select Date"
